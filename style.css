@@ -1,77 +1,89 @@
-/* ========== Reset ========== */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ========== Body & Background ========== */
+/* Body */
 body {
-  background-color: #f5e6d3;   /* Light sandstone beige */
-  font-family: Arial, Helvetica, sans-serif;
-  color: #2c2c2c;              /* Default text color */
+  font-family: Arial, sans-serif;
+  background-color: #111111; /* 🔹 Change background color here */
+  color: #fff;
   text-align: center;
 }
 
-/* ========== Navbar ========== */
-nav {
+/* Header */
+header {
   display: flex;
-  justify-content: flex-end;
-  padding: 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #222;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-nav a {
-  color: #7b1113;   /* Deep redstone red */
-  text-decoration: none;
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.logo-container h1 {
+  font-size: 28px;
+  color: #ff4d4d; /* 🔹 Redstone-themed title */
   font-weight: bold;
-  margin-left: 20px;
-  font-size: 18px;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
   transition: color 0.3s;
 }
 
-nav a:hover {
-  color: #000; /* Black on hover */
+nav ul li a:hover {
+  color: #ff4d4d;
 }
 
-/* ========== Logo Section ========== */
-.logo {
-  display: block;
-  margin: 50px auto 20px auto;
-  max-width: 280px;
-}
-
-.logo-text {
-  font-size: 56px;
-  font-weight: bold;
-  color: #7b1113;   /* Deep redstone */
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.25);
-  letter-spacing: 2px;
-}
-
-/* ========== Sections ========== */
+/* Sections */
 section {
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
-h2 {
-  font-size: 32px;
-  color: #7b1113;
-  margin-bottom: 20px;
-}
-
-p {
+/* WhatsApp Button */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
   font-size: 18px;
-  max-width: 800px;
-  margin: 0 auto 20px auto;
-  line-height: 1.6;
+  font-weight: bold;
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background 0.3s, transform 0.2s;
+  z-index: 999;
 }
 
-/* ========== Footer ========== */
-footer {
-  background: #7b1113;  /* Deep red footer */
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  font-size: 14px;
+.whatsapp-btn:hover {
+  background-color: #1ebe5c;
+  transform: scale(1.05);
 }
