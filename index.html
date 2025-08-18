@@ -4,51 +4,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Netastones</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Header -->
-  <header class="header-container">
-    <img src="logo.png" alt="Netastones Logo" class="logo">
-    <h1 class="company-name">NETASTONES</h1>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Netastones Logo" class="logo">
+      <h1>NETASTONES</h1>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Mobile menu toggle -->
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
-    <h2>Premium Redstone Collection</h2>
-    <p>Crafting excellence in stones for over <strong>25+ years</strong>.</p>
-    <p><em>Founded by Mr. Ashok Bansal</em></p>
-  </section>
-
-  <!-- Products Section -->
-  <section class="products">
-    <h2>Our Products</h2>
-    <p>Explore our wide range of premium redstone products crafted with precision and elegance.</p>
+    <h2>Premium Redstone Products</h2>
+    <p>Crafted with quality. Built to last.</p>
   </section>
 
   <!-- About -->
-  <section class="about">
+  <section id="about">
     <h2>About Us</h2>
-    <p>
-      At <strong>Netastones</strong>, we specialize in delivering premium redstone 
-      products with unmatched quality. Our legacy of more than 
-      <strong>25 years</strong> in the stone industry speaks for itself. 
-      From timeless elegance to modern designs, we make your spaces extraordinary.
-    </p>
+    <p>Welcome to Netastones. We specialize in premium redstone products that combine durability with timeless beauty.</p>
+  </section>
+
+  <!-- Products -->
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="stone1.jpg" alt="Redstone Slab">
+        <h3>Redstone Slab</h3>
+        <p>Perfect for flooring and outdoor spaces.</p>
+      </div>
+      <div class="product-card">
+        <img src="stone2.jpg" alt="Polished Redstone">
+        <h3>Polished Redstone</h3>
+        <p>Shiny finish for interiors and walls.</p>
+      </div>
+      <div class="product-card">
+        <img src="stone3.jpg" alt="Redstone Block">
+        <h3>Redstone Block</h3>
+        <p>Durable, premium quality construction blocks.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Contact -->
-  <section class="contact">
+  <section id="contact">
     <h2>Contact Us</h2>
-    <p>We’re here to help you select the finest stones for your project.</p>
-    <a href="https://wa.me/918005698459" class="whatsapp-btn" target="_blank">💬 Chat on WhatsApp</a>
+    <p>Email: <a href="mailto:info@netastones.com">info@netastones.com</a></p>
+    <p>Phone: +91 98765 43210</p>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Netastones. All Rights Reserved.</p>
+   
   </footer>
 
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/918005698459" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector(".nav-links").classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
