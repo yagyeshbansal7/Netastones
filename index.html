@@ -7,82 +7,84 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Header -->
+  <!-- Navbar -->
   <header>
-    <div class="logo-container">
-      <img src="logo.png" alt="Netastones Logo" class="logo">
-      <h1>NETASTONES</h1>
+    <div class="logo">
+      <img src="logo.png" alt="Netastones Logo">
+      <span>NETASTONES</span>
     </div>
-
-    <!-- Navigation -->
     <nav>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#products">Products</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <!-- Mobile menu toggle -->
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <div class="menu-toggle">☰</div>
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section class="hero">
-    <h2>Premium Redstone Products</h2>
-    <p>Crafted with quality. Built to last.</p>
+    <h1>Welcome to Netastones</h1>
+    <p>Premium Redstone Products for Modern Living</p>
+    <a href="#products" class="btn">Explore Products</a>
   </section>
 
-  <!-- About -->
-  <section id="about">
+  <!-- About Section -->
+  <section id="about" class="about">
     <h2>About Us</h2>
-    <p>Welcome to Netastones. We specialize in premium redstone products that combine durability with timeless beauty.</p>
+    <div class="legacy-badge">25+ Years of Legacy</div>
+    <p>
+      For more than two decades, Netastones has been a trusted name in the
+      natural stone industry. We are committed to delivering the finest 
+      quality redstone products, combining traditional craftsmanship with 
+      modern design.
+    </p>
+    <p class="founder">Founded by <strong>Mr. Ashok Bansal</strong>, Netastones continues to grow with a vision of excellence and trust.</p>
   </section>
 
-  <!-- Products -->
-  <section id="products">
+  <!-- Products Section -->
+  <section id="products" class="products">
     <h2>Our Products</h2>
-    <div class="product-grid">
+    <div class="product-list">
       <div class="product-card">
-        <img src="stone1.jpg" alt="Redstone Slab">
+        <img src="redstone-slab.jpg" alt="Redstone Slab">
         <h3>Redstone Slab</h3>
         <p>Perfect for flooring and outdoor spaces.</p>
       </div>
       <div class="product-card">
-        <img src="stone2.jpg" alt="Polished Redstone">
+        <img src="polished-redstone.jpg" alt="Polished Redstone">
         <h3>Polished Redstone</h3>
         <p>Shiny finish for interiors and walls.</p>
       </div>
       <div class="product-card">
-        <img src="stone3.jpg" alt="Redstone Block">
+        <img src="redstone-block.jpg" alt="Redstone Block">
         <h3>Redstone Block</h3>
         <p>Durable, premium quality construction blocks.</p>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:info@netastones.com">info@netastones.com</a></p>
-    <p>Phone: +91 98765 43210</p>
+    <p>Email: <a href="mailto:yagyeshbansal7@gmail.com">yagyeshbansal7@gmail.com</a></p>
+    <p>Phone: +91 8005698459</p>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Netastones. All Rights Reserved.</p>
-   
-  </footer>
-
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/918005698459" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/918005698459" class="whatsapp-btn" target="_blank">
+    💬 Chat on WhatsApp
   </a>
 
+  <!-- Script for mobile nav toggle -->
   <script>
-    function toggleMenu() {
-      document.querySelector(".nav-links").classList.toggle("active");
-    }
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
   </script>
 </body>
 </html>
