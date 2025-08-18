@@ -1,118 +1,77 @@
-/* ==== Reset ==== */
+/* ========== Reset ========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
 }
 
+/* ========== Body & Background ========== */
 body {
-  background-color: #f5e6d3;  /* light beige */
-}
-
-
-
-/* ==== Header ==== */
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
-  background: #800000; /* Deep red */
+  background-color: #f5e6d3;   /* Light sandstone beige */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2c2c2c;              /* Default text color */
   text-align: center;
-  position: relative;
 }
 
-header img {
-  width: 140px;
-  height: auto;
-  margin-bottom: 15px;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  margin-bottom: 5px;
-  color: #ffffff; /* White */
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.8); /* Black shadow for depth */
-  letter-spacing: 2px;
-}
-
-
-
-header h2 {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #fff;
-}
-
-/* ==== Navigation ==== */
+/* ========== Navbar ========== */
 nav {
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
+  justify-content: flex-end;
+  padding: 20px 50px;
 }
 
 nav a {
-  color: white;
+  color: #7b1113;   /* Deep redstone red */
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 18px;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #f1c40f; /* gold hover */
+  color: #000; /* Black on hover */
 }
 
-/* ==== Hero Section ==== */
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url("https://images.unsplash.com/photo-1605559424843-92c2c1c3c3f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80");
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 120px 20px;
-  color: white;
+/* ========== Logo Section ========== */
+.logo {
+  display: block;
+  margin: 50px auto 20px auto;
+  max-width: 280px;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 15px;
-  text-transform: uppercase;
+.logo-text {
+  font-size: 56px;
+  font-weight: bold;
+  color: #7b1113;   /* Deep redstone */
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+  letter-spacing: 2px;
 }
 
-.hero p {
-  font-size: 1.3rem;
-  margin-bottom: 25px;
-  color: #f1f1f1;
+/* ========== Sections ========== */
+section {
+  padding: 60px 20px;
 }
 
-.btn {
-  background: #f1c40f;
-  color: #222;
-  padding: 12px 28px;
-  border-radius: 30px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.3s;
-  border: none;
-  cursor: pointer;
+h2 {
+  font-size: 32px;
+  color: #7b1113;
+  margin-bottom: 20px;
 }
 
-.btn:hover {
-  background: #d4ac0d;
-  transform: scale(1.05);
+p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  line-height: 1.6;
 }
 
-/* ==== Footer ==== */
+/* ========== Footer ========== */
 footer {
-  background: #222;
-  color: #aaa;
+  background: #7b1113;  /* Deep red footer */
+  color: #fff;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  font-size: 0.9rem;
+  font-size: 14px;
 }
