@@ -7,10 +7,10 @@
 }
 
 body {
-  background: #fdfdfd;
-  color: #222;
-  line-height: 1.6;
+  background-color: #f5e6d3;  /* light sandstone beige */
+  color: #333;
 }
+
 
 /* ==== Header ==== */
 header {
