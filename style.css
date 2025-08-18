@@ -34,9 +34,11 @@ header h1 {
   font-size: 2.5rem;
   font-weight: 900;
   margin-bottom: 5px;
-  color: #f1c40f; /* Golden text for contrast */
+  color: #f1c40f; /* Gold */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* Glow */
   letter-spacing: 2px;
 }
+
 
 header h2 {
   font-size: 1.2rem;
