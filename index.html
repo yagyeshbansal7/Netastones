@@ -4,87 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Netastones</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <header>
-    <div class="logo">
-      <img src="logo.png" alt="Netastones Logo">
-      <span>NETASTONES</span>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="menu-toggle">☰</div>
-    </nav>
+
+  <!-- Header -->
+  <header class="header-container">
+    <img src="logo.png" alt="Netastones Logo" class="logo">
+    <h1 class="company-name">NETASTONES</h1>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>Welcome to Netastones</h1>
-    <p>Premium Redstone Products for Modern Living</p>
-    <a href="#products" class="btn">Explore Products</a>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <div class="legacy-badge">25+ Years of Legacy</div>
-    <p>
-      For more than two decades, Netastones has been a trusted name in the
-      natural stone industry. We are committed to delivering the finest 
-      quality redstone products, combining traditional craftsmanship with 
-      modern design.
-    </p>
-    <p class="founder">Founded by <strong>Mr. Ashok Bansal</strong>, Netastones continues to grow with a vision of excellence and trust.</p>
+    <h2>Premium Redstone Collection</h2>
+    <p>Crafting excellence in stones for over <strong>25+ years</strong>.</p>
+    <p><em>Founded by Mr. Ashok Bansal</em></p>
   </section>
 
   <!-- Products Section -->
-  <section id="products" class="products">
+  <section class="products">
     <h2>Our Products</h2>
-    <div class="product-list">
-      <div class="product-card">
-        <img src="redstone-slab.jpg" alt="Redstone Slab">
-        <h3>Redstone Slab</h3>
-        <p>Perfect for flooring and outdoor spaces.</p>
-      </div>
-      <div class="product-card">
-        <img src="polished-redstone.jpg" alt="Polished Redstone">
-        <h3>Polished Redstone</h3>
-        <p>Shiny finish for interiors and walls.</p>
-      </div>
-      <div class="product-card">
-        <img src="redstone-block.jpg" alt="Redstone Block">
-        <h3>Redstone Block</h3>
-        <p>Durable, premium quality construction blocks.</p>
-      </div>
-    </div>
+    <p>Explore our wide range of premium redstone products crafted with precision and elegance.</p>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
+  <!-- About -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      At <strong>Netastones</strong>, we specialize in delivering premium redstone 
+      products with unmatched quality. Our legacy of more than 
+      <strong>25 years</strong> in the stone industry speaks for itself. 
+      From timeless elegance to modern designs, we make your spaces extraordinary.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:yagyeshbansal7@gmail.com">yagyeshbansal7@gmail.com</a></p>
-    <p>Phone: +91 8005698459</p>
+    <p>We’re here to help you select the finest stones for your project.</p>
+    <a href="https://wa.me/918005698459" class="whatsapp-btn" target="_blank">💬 Chat on WhatsApp</a>
   </section>
 
-  <!-- WhatsApp Button -->
-  <a href="https://wa.me/918005698459" class="whatsapp-btn" target="_blank">
-    💬 Chat on WhatsApp
-  </a>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Netastones. All Rights Reserved.</p>
+  </footer>
 
-  <!-- Script for mobile nav toggle -->
-  <script>
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
-
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  </script>
 </body>
 </html>
