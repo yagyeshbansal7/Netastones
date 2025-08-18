@@ -1,4 +1,4 @@
-/* ==== Global Styles ==== */
+/* ==== Reset ==== */
 * {
   margin: 0;
   padding: 0;
@@ -15,48 +15,46 @@ body {
 /* ==== Header ==== */
 header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  padding: 20px;
+  padding: 40px 20px;
   background: #800000; /* Deep red */
-  color: white;
   text-align: center;
+  position: relative;
 }
 
 header img {
-  width: 120px;
+  width: 140px;
   height: auto;
-  margin-bottom: 10px;
-  border-radius: 50%; /* Makes logo circular */
-  border: 3px solid white;
+  margin-bottom: 15px;
 }
 
 header h1 {
-  font-size: 2.2rem;
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 900;
   margin-bottom: 5px;
+  color: #f1c40f; /* Golden text for contrast */
   letter-spacing: 2px;
 }
 
 header h2 {
   font-size: 1.2rem;
   font-weight: 400;
-  color: #f1c40f; /* Golden highlight */
+  color: #fff;
 }
 
 /* ==== Navigation ==== */
 nav {
-  background: #222;
   display: flex;
   justify-content: center;
-  padding: 12px 0;
+  gap: 30px;
+  margin-top: 20px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 20px;
   font-weight: 600;
   transition: color 0.3s;
 }
