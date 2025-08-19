@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- ====== Header ====== -->
   <header class="header">
     <div class="logo">
       <img src="logo.png" alt="Netastones Logo" />
@@ -19,12 +20,14 @@
     </nav>
   </header>
 
+  <!-- ====== Hero Section ====== -->
   <section class="hero">
     <h2>Welcome to Netastones</h2>
     <p>Premium Redstone Products for Modern Living</p>
     <a href="#products" class="btn">Explore Products</a>
   </section>
 
+  <!-- ====== About Section ====== -->
   <section class="about" id="about">
     <h2>About Us</h2>
     <p><strong>25+ Years of Legacy</strong></p>
@@ -32,72 +35,89 @@
     <p>Founded by <strong>Mr. Ashok Bansal</strong>, Netastones grows with a vision of excellence and trust.</p>
   </section>
 
+  <!-- ====== Products Section ====== -->
   <section class="products" id="products">
-  <h2>Our Products</h2>
+    <h2>Our Products</h2>
 
-  <div class="product">
-    <a href="product1.html">
-      <img src="redstone_slab.jpg" alt="Redstone Slab" />
-      <h3>Redstone Slab</h3>
-      <p>Perfect for flooring and outdoor spaces.</p>
-    </a>
-  </div>
+    <div class="products-container">
+      <div class="product">
+        <a href="product1.html">
+          <img src="redstone_slab.jpg" alt="Redstone Slab" />
+          <h3>Redstone Slab</h3>
+          <p>Perfect for flooring and outdoor spaces.</p>
+        </a>
+      </div>
 
-  <div class="product">
-    <a href="product2.html">
-      <img src="polished_redstone.jpg" alt="Polished Redstone" />
-      <h3>Polished Redstone</h3>
-      <p>Shiny finish for interiors and walls.</p>
-    </a>
-  </div>
+      <div class="product">
+        <a href="product2.html">
+          <img src="polished_redstone.jpg" alt="Polished Redstone" />
+          <h3>Polished Redstone</h3>
+          <p>Shiny finish for interiors and walls.</p>
+        </a>
+      </div>
 
-  <div class="product">
-    <a href="product3.html">
-      <img src="redstone_blocked.jpg" alt="Redstone Block" />
-      <h3>Redstone Block</h3>
-      <p>Durable, premium quality construction blocks.</p>
-    </a>
-  </div>
-     <div class="product">
-    <a href="product4.html">
-      <img src="redstone_slab1.jpg" alt="Stone Slab" />
-      <h3> Red Stone Slab</h3>
-      <p>Perfect for flooring and outdoor spaces .</p>
-    </a>
-  </div>
+      <div class="product">
+        <a href="product3.html">
+          <img src="redstone_blocked.jpg" alt="Redstone Block" />
+          <h3>Redstone Block</h3>
+          <p>Durable, premium quality construction blocks.</p>
+        </a>
+      </div>
+
+      <div class="product">
+        <a href="product4.html">
+          <img src="redstone_slab1.jpg" alt="Stone Slab" />
+          <h3>Red Stone Slab</h3>
+          <p>Perfect for flooring and outdoor spaces.</p>
+        </a>
+      </div>
+
+      <div class="product">
+        <a href="product5.html">
+          <img src="beige_stone.jpg" alt="Beige Stone" />
+          <h3>Beige Stone Slab</h3>
+          <p>Subtle. Sophisticated. Stunning — The Beige Stone Statement.</p>
+        </a>
+      </div>
+
+      <div class="product">
+        <a href="product6.html">
+          <img src="stone_art7.jpg" alt="ART Stone" />
+          <h3>Cultural Stonecraft</h3>
+          <p>Sculpting Culture in Redstone Elegance</p>
+        </a>
+      </div>
     </div>
-     <div class="product">
-    <a href="product5.html">
-      <img src="beige_stone.jpg" alt="Beige Stone" />
-      <h3>Beige Stone Slab</h3>
-      <p>Subtle. Sophisticated. Stunning — The Beige Stone Statement.</p>
-    </a>
-  </div>
-     <div class="product">
-    <a href="product6.html">
-      <img src="stone_art7.jpg" alt="ART Stone" />
-      <h3>Cultural Stonecraft</h3>
-      <p>Sculpting Culture in Redstone Elegance</p>
-    </a>
-  </div>
-    
-</section>
+  </section>
 
-
+  <!-- ====== Contact Section ====== -->
   <section class="contact" id="contact">
     <h2>Contact Us</h2>
     <p>Email: <a href="mailto:yagyeshbansal7@gmail.com">yagyeshbansal7@gmail.com</a></p>
     <p>Phone: +91 8005698459</p>
   </section>
 
-  <!-- ✅ Upgraded WhatsApp Floating Button -->
+  <!-- ====== WhatsApp Floating Button ====== -->
   <a href="https://wa.me/918005698459" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
     <img src="whatsapp_logo.jpg" alt="WhatsApp Chat" />
     <span>Chat with us</span>
   </a>
 
+  <!-- ====== Footer ====== -->
   <footer class="footer">
     <p>© 2025 Netastones. All rights reserved.</p>
   </footer>
+
+  <!-- ====== Script for Sticky Header Shadow ====== -->
+  <script>
+    window.addEventListener("scroll", function() {
+      const header = document.querySelector(".header");
+      if (window.scrollY > 10) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
 </body>
 </html>
